@@ -1,4 +1,4 @@
-public class Skill {
+public class Skill extends Profile {
     //variables
     private String skillName;
     private String proficiency;

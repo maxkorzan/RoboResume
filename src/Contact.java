@@ -1,4 +1,4 @@
-public class Resume {
+public class Contact extends Profile {
 //    a name,
 //    an email address,
 
@@ -8,9 +8,9 @@ public class Resume {
     private String phone;
 
     //constructors
-    public Resume() {
+    public Contact() {
     }
-    public Resume(String name, String email, String phone) {
+    public Contact(String name, String email, String phone) {
         this.name = name;
         this.email = email;
         this.phone = phone;

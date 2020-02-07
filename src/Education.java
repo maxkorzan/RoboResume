@@ -1,4 +1,4 @@
-public class Education {
+public class Education extends Profile {
     //variables
     private String degree;
     private String major;

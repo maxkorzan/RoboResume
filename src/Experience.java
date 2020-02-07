@@ -1,4 +1,4 @@
-public class Experience {
+public class Experience extends Profile {
     //variables
     private String jobTitle;
     private String company;
