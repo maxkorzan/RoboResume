@@ -29,7 +29,7 @@ public class Skill extends Profile {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Skills\n");
+//        sb.append("Skills\n");
         sb.append(getSkillName() + ", " + getProficiency());
         return sb.toString();
     }

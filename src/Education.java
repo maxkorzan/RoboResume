@@ -48,7 +48,7 @@ public class Education extends Profile {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Education\n");
+//        sb.append("Education\n");
         sb.append(getDegree() + " in " + getMajor() + "\n");
         sb.append(getUniversity() + ", " + getGradYear()+ "\n");
         return sb.toString();
