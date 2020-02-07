@@ -1,7 +1,4 @@
 public class Contact extends Profile {
-//    a name,
-//    an email address,
-
     //variables
     private String name;
     private String email;
@@ -37,4 +34,18 @@ public class Contact extends Profile {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("\n\n\n=============================================================\n");
+        sb.append(getName() + "\n");
+        sb.append(getEmail() + "\n");
+        sb.append(getPhone() + "\n");
+        return sb.toString();
+    }
+
+
+
 }

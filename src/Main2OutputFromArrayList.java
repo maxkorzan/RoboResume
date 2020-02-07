@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class Main2OutputFromArrayList {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,23 +11,6 @@ public class Main {
         Skill sk1 = new Skill();
         Skill sk2 = new Skill();
         Skill sk3 = new Skill();
-
-
-//        ArrayList<Profile> fred = new ArrayList<>();
-//        fred.add(new Contact("Kanye West", "theGreatest@ofAllTime.com","3012132221"));
-//        fred.add(new Education("bachelors","chinese","UMD","2001"));
-//        fred.add(new Experience("Plumber","Joe's Plumbing","May 2002","June 2018","fixing leaks"));
-//        fred.add(new Skill("running","expert"));
-//        fred.add(new Skill("spelling","novice"));
-//        fred.add(new Skill("juggling","master"));
-
-
-//        Contact con = new Contact("Kanye West", "theGreatest@ofAllTime.com", "3012132221");
-//        Education edu = new Education("bachelors", "chinese", "UMD", "2001");
-//        Experience exp = new Experience("Plumber", "Joe's Plumbing", "May 2002", "June 2018", "fixing leaks");
-//        Skill sk1 = new Skill("running", "expert");
-//        Skill sk2 = new Skill("spelling", "novice");
-//        Skill sk3 = new Skill("juggling", "master");
 
         //get info from user:
         System.out.println("Welcome to the Robo-Resume generator!" +
@@ -40,7 +23,6 @@ public class Main {
         con.setEmail(sc.nextLine());
         System.out.print("Enter your phone number: ");
         con.setPhone(sc.nextLine());
-
 
         System.out.println("\nEDUCATION");
         System.out.print("Enter your degree type: ");
@@ -64,7 +46,6 @@ public class Main {
         System.out.print("Enter your end date: ");
         exp.setEndDate(sc.nextLine());
 
-
         System.out.println("\nSKILLS");
         System.out.print("Enter your skill name (1 of 3): ");
         sk1.setSkillName(sc.nextLine());
@@ -82,7 +63,7 @@ public class Main {
         sk3.setProficiency(sc.nextLine());
 
 
-
+        //***** STORE VALUES IN ARRAYLIST ******
         ArrayList<Profile> resume = new ArrayList<>();
 
         resume.add(new Contact(con.getName(), con.getEmail(), con.getPhone()));
@@ -92,42 +73,12 @@ public class Main {
         resume.add(new Skill(sk2.getSkillName(), sk2.getProficiency()));
         resume.add(new Skill(sk3.getSkillName(), sk3.getProficiency()));
 
+
+        //****** DISPLAY RESUME ******
         for (int i = 0; i < resume.size(); i++) {
             System.out.println(resume.get(i));
         }
 
-
-
-
-
-//        //Header
-//        System.out.println(con.toString());
-////        System.out.println("\n\n\n=============================================================");
-////        System.out.println(con.getName());
-////        System.out.println(con.getEmail());
-////        System.out.println(con.getPhone());
-//
-//        //Education
-//        System.out.println(edu.toString());
-////        System.out.println("\nEducation");
-////        System.out.println(edu.getDegree() + " in " + edu.getMajor());
-////        System.out.println(edu.getUniversity() + ", " + edu.getGradYear());
-//
-//
-//        //Experience
-//        System.out.println("\nExperience");
-//        System.out.println(exp.getJobTitle());
-//        System.out.println(exp.getCompany() + ", " + exp.getStartDate() + " - " + exp.getEndDate());
-//        System.out.println("- Duty 1, " + exp.getDescription());
-//
-//        //Skills
-//        System.out.println("\nSkills");
-//        System.out.println(sk1.getSkillName() + ", " + sk1.getProficiency());
-//        System.out.println(sk2.getSkillName() + ", " + sk2.getProficiency());
-//        System.out.println(sk3.getSkillName() + ", " + sk3.getProficiency());
-//
-//
-//    }
-
     }
 }
+

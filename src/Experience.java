@@ -53,5 +53,15 @@ public class Experience extends Profile {
         this.description = description;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Experience\n");
+        sb.append(getJobTitle() + "\n");
+        sb.append(getCompany() + ", " + getStartDate() + " - " + getEndDate() + "\n");
+        sb.append("- Duty 1, " + getDescription() + "\n");
+        return sb.toString();
+    }
+
 
 }

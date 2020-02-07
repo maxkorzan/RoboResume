@@ -26,4 +26,14 @@ public class Skill extends Profile {
         this.proficiency = proficiency;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Skills\n");
+        sb.append(getSkillName() + ", " + getProficiency());
+        return sb.toString();
+    }
+
+
+
 }
